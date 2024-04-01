@@ -5,6 +5,7 @@ include('includes/header.php');
 
 include('authenticate.php'); 
 
+
 if(isset($_GET['t']))
 {
     $tracking_no = $_GET['t'];
@@ -25,8 +26,14 @@ else{
     die();
 }
 
+
+
 $data = mysqli_fetch_array($orderData);
+
+
 ?>
+
+
 
 
 <div class="py-3 bg-danger">
@@ -54,6 +61,9 @@ $data = mysqli_fetch_array($orderData);
                         <div class="card-header bg-danger">
                             <span class="text-white fs-4"> View Order</span>
                             <a href="my-orders.php" class="btn btn-warning float-end"> <i class="fa fa-reply"></i> Back</a>
+                            
+                            <a href="invoice.php?t=<?= $tracking_no; ?>" class="btn btn-primary  float-end"><i class="fa fa-file-alt"></i> View Invoice</a>
+
                         </div>
                         <div class="card-body">
                             <div class="row">
