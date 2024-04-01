@@ -62,7 +62,7 @@ $data = mysqli_fetch_array($orderData);
                             <span class="text-white fs-4"> View Order</span>
                             <a href="my-orders.php" class="btn btn-warning float-end"> <i class="fa fa-reply"></i> Back</a>
                             
-                            <a href="invoice.php?t=<?= $tracking_no; ?>" class="btn btn-primary  float-end"><i class="fa fa-file-alt"></i> View Invoice</a>
+                            <a href="invoice.php?t=<?= $tracking_no; ?>" class="btn btn-primary  float-end"><i class="fa fa-file"></i> View Invoice</a>
 
                         </div>
                         <div class="card-body">
