@@ -1,6 +1,10 @@
-admin login
+Import the sql file in config folder on phpMyAdmin
+
+*for admin login:
 om@gmail.com
 pwd: 1234
-user login
+
+*for user login:
 user@gmail.com
-pwd: 1234
+pwd: 1234   
+
